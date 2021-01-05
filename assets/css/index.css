@@ -1,0 +1,49 @@
+/* 首页等字体图标 */
+.iconfont {
+  margin-right: 10px;
+}
+/* 文章管理，个人中心二级菜单 */
+.layui-icon {
+  margin-right: 10px;
+}
+.layui-nav-child dd {
+  margin-left: 30px;
+}
+/* 用户默认头部字体头像 */
+.text-avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #009688;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+/* 用户自定义头像 */
+.layui-nav-img {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+/* 首页头像和欢迎语 */
+.userinfo {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+/* 底部固定区域 */
+.layui-footer {
+  text-align: center;
+}
+/* 内容主体区域显示 */
+.layui-body {
+  overflow: hidden;
+}
+.layui-body iframe {
+  width: 100%;
+  height: 100%;
+}
