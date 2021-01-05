@@ -25,13 +25,6 @@ $(function () {
     },
   });
 
-  //修改ajax配置项 增加url根目录
-  $.ajaxPrefilter(function (options) {
-    // options.url = 'http://ajax.frontend.itheima.net'+ options.url;
-    options.url = 'http://api-breakingnews-web.itheima.net'+ options.url;
-    console.log(options.url);
-  });
-  
   //获取表单注册页面数据发送ajax请求
   let layer = layui.layer;
   $("#regiForm").on("submit", function (e) {
@@ -67,6 +60,7 @@ $(function () {
         if (res.status === 1) {
           layer.msg("账户或密码错误");
         } else {
+          localStorage.setItem("token", res.token);
           layer.msg("登录成功，即将跳转到首页", function () {
             location.href = "/home/index.html";
           });
